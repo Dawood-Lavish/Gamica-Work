@@ -81,7 +81,7 @@
                 <li><a target="_blank" href="./information.html">Information</a></li>
             </ul>
         </div>
-         <button id="btn">Dark Mode</button>
+         <button id="btn" class="new-t">Dark Mode</button>
     </nav>
 
     <main>
@@ -100,11 +100,13 @@
 </body>
 <script>
  
+
   let a = document.getElementById("btn")
     a.addEventListener("click" , ()=>{
       alert("Wellcome to Dark Mode")
       a.innerHTML = "White Mode";
       document.body.style.backgroundColor = "black"
+      document.getElementsByTagName("a").backgroundColor = "white"
     });
 </script>
 </html>
