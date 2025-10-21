@@ -20,6 +20,7 @@
     }
     .logo>a>img{
         width: 70px;
+        border-radius: 12px;
     }
     .section-1{
         display: flex;
@@ -98,16 +99,18 @@
     </main>
 </body>
 <script>
-    let a = document.querySelector("button")
+ 
+  let a = document.getElementById("btn")
     a.addEventListener("click" , ()=>{
       alert("Wellcome to Dark Mode")
       a.innerHTML = "White Mode";
       document.body.style.backgroundColor = "black"
-      document.getElementsByTagNameNS("a").style.backgroundColor = "white"
-            // document.getElementsByTagNameNS("a").style.backgroundColor =
-
-
     });
-
 </script>
 </html>
+
+
+
+
+
+
