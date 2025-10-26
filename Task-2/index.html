@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <title>Task 02</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        width: 100%;
+        height: 100vh;
+        background-color: hsl(234.78deg 17.56% 25.69%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .contan{
+        padding: 26px;
+        background-color: white;
+        display: flex;
+        border-radius: 15px;
+    }
+    .tick-part{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+     .left{
+        margin-top: 3rem;
+     }
+    .left h1{
+       margin-top: 2rem;
+       margin-bottom: 19px;
+       margin-left: 11px;
+       color: hsl(232.26deg 30.69% 19.8%);
+       font-size: 37px;
+       font-weight: bold;
+    }
+    .left p{
+     margin-left: 11px;  
+     color: #b19f9f; 
+    }
+    .box-1 {
+       padding: 12px;
+    display: flex;
+    gap: 13px;
+    }
+     .box-1 img{
+        width: 18px;
+     }
+     .right img{
+        width: 80%;
+     }
+     .contan input{
+        padding: 14px;
+    width: 330px;
+    border: 1px solid #b19f9f;
+    border-radius: 8px;
+    font-weight: bold;
+     }
+     input::placeholder{
+        color: #b19f9f;
+     }
+     button{
+        margin-top: 1.5rem;
+    width: 357px;
+    padding: 18px 0px;
+    border-radius: 12px;
+    border: none;
+    background-color: hsl(232.26deg 30.69% 19.8%);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+     }
+</style>
+<body>
+    
+
+    <div class="contan">
+        <div class="left">
+            <h1>Stay Updated !</h1>
+            <p>Join 60,000+ product mangers reciving monthly updates on:</p>
+
+            <div class="tick-part">
+                <div class="box-1">
+                     <img src="./images/icon-list.svg" alt=""> <p>Product deiscovery  and Building whats matter</p>
+                </div>
+                 <div class="box-1">
+                     <img src="./images/icon-list.svg" alt=""> <p>Measring to ensure updates are a success</p>
+                </div>
+                 <div class="box-1">
+                     <img src="./images/icon-list.svg" alt=""> <p>And much more !</p>
+                </div>
+               
+            </div>
+
+            <h4 style="color: #b19f9f;;" >Email address</h4> <br>
+            <input type="email" placeholder="email@company.com" required>
+            <br>
+            <button>Subscribe to monthly newsettler</button>
+            
+        </div>
+        <div class="right">
+            <img style="width: 100%;" src="./images/illustration-sign-up-desktop.svg" alt="">
+        </div>
+    </div>
+</body>
+</html>
