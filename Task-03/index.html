@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    *{
+       margin: 0;
+       padding: 0;
+    }
+    .main-cont{
+        width: 85%;
+        margin: auto;
+        /* background-color: aquamarine; */
+    }
+    header nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px;
+
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        list-style: none;
+    }
+    ul li a{
+        text-decoration: none;
+        color: hsl(0deg 0.59% 73.07%);
+        font-weight: bold;
+    }
+      ul li a:hover{
+        color: hsl(6, 68%, 70%);
+        border-bottom: 2px solid hsl(6, 68%, 70%) ;
+      }
+      .sect-1{
+        display: flex;
+        gap: 32px;
+        margin-top: 1rem;
+      
+      }
+      .sect-1 .left{
+        width: 78%;
+      }
+      .sect-1 .right{
+        width: 26%;
+        background-color: hsl(240deg 100% 5.1%);
+        color: white;
+        padding: 24px;
+      }
+      .lower-part{
+        display: flex;
+        gap: 7rem;
+        margin-top: 1.5rem;
+      }
+      .mar{
+        margin-top: 12px;
+        margin-bottom: 12px;
+      }
+      .line-h{
+        line-height: 26px;
+      }
+    .lower-part-2 button{
+background-color: hsl(240deg 100% 5.1%); color: white; cursor: pointer;
+    padding-inline: 29px;
+    padding-block: 12px;
+    border: none;
+    }
+    .last-cont{
+        margin-block: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    h3:hover{
+        color:hsl(33.45deg 76.04% 57.45%) ;
+        cursor: pointer;
+    }
+    .box-1{
+        display: flex;
+        width: 30%;
+            gap: 2.5rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+    }
+    .box-right{
+        padding: 8px;
+    }
+       .box-1 img{
+           width: 101px;
+       }
+</style>
+<body>
+
+    <div class="main-cont">
+        <header>
+            <nav>
+                <img style="width: 49px;" src="./images/logo.svg" alt="">               
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Catagories</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="sect-1">
+            <div class="left">
+                <div class="pic">
+                    <img style="width: 100%;" src="./images/image-web-3-desktop.jpg" alt="">
+                </div>
+                <div class="lower-part">
+                    <h1 style="font-size: 39px; font-weight: bolder;
+    width: 46rem;">The Bright Future of the Web 3.0 ?</h1>
+                    <div class="lower-part-2">
+                        <p class="line-h">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, voluptate! Illo ex consequatur maiores quibusdam mollitia Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, dolorem? aliquam provident delectus voluptate.</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <h1 class="mar" style="color: hsl(33.45deg 76.04% 57.45%);">New</h1>
+                <h3>Hydrogen VS Electric Cars</h3>
+                <p style="color: hsl(0deg 0.81% 51.37%);" class="mar line-h" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, eveniet vero! Itaque laudantium obcaecati ex te!</p>
+                <hr class="mar">
+                <h3 class="mar">The Downsides of AI Artistry</h3>
+                <p style="color: hsl(0deg 0.81% 51.37%);" class="mar line-h">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem iste vitae voluptatibus corporis sequi mollitia?</p>
+                <hr class="mar">
+                <h3 class="mar">Is VC Funding Drying Up?</h3>
+                <p style="color: hsl(0deg 0.81% 51.37%);" class="mar line-h">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem iste vitae voluptatibus corporis sequi mollitia?</p>
+            </div>
+        </div>
+
+        <div class="last-cont">
+            <div class="box-1">
+                <img src="./images/image-top-laptops.jpg" alt="">
+                <div class="box-right">
+                    <h2 style="color: hsl(33.45deg 76.04% 57.45%);">01</h2>
+                    <h4>Reviving Retro PCs</h4>
+                    <p style="color: hsl(0deg 0.81% 51.37%);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non consequatur blanditiis dicta fugiat.</p>
+                </div>
+            </div>
+             <div class="box-1">
+                <img src="./images/image-retro-pcs.jpg" alt="">
+                <div class="box-right">
+                    <h2  style="color: hsl(33.45deg 76.04% 57.45%);">02</h2>
+                    <h4>Reviving Retro PCs</h4>
+                    <p style="color: hsl(0deg 0.81% 51.37%);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non consequatur blanditiis dicta fugiat.</p>
+                </div>
+            </div>
+             <div class="box-1">
+                <img src="./images/image-gaming-growth.jpg" alt="">
+                <div class="box-right">
+                    <h2  style="color: hsl(33.45deg 76.04% 57.45%);">03</h2>
+                    <h4>Reviving Retro PCs</h4>
+                    <p style="color: hsl(0deg 0.81% 51.37%);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non consequatur blanditiis dicta fugiat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
