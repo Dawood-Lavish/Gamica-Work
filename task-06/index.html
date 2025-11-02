@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-06</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        width: 95%;
+        margin: auto;
+        background-color: hsl(227.14deg 70% 7.84%);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    header{
+       display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: hsl(223.64deg 26.19% 16.47%);
+    padding-inline: 20px;
+    padding-block: 8px;
+    border-radius: 20px;
+    }
+    #bright{
+    background-color: hsl(227.14deg 22.95% 23.92%);
+    padding: 12px;
+    border-radius: 12px;
+    }
+   .lower{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 13px;
+    margin-top: 36px;
+   }
+   .btn
+   {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+   }
+   .btn button{
+    padding: 9px;
+    border-radius: 27px;
+    font-size: 18px;
+    padding-inline: 16px;
+    border: none;
+    color: white;
+    background-color: hsl(227.14deg 22.95% 23.92%);
+    cursor: pointer;
+   }
+     .btn button:hover
+   {
+
+   background-color:hsl(2.66deg 86.81% 64.31%);
+   color: hsl(227.14deg 70% 7.84%);
+   }
+   .upper{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+   }
+   .box{
+        width: 29%;
+    background-color:hsl(223.64deg 26.19% 16.47%);
+    padding: 21px;
+    border-radius: 16px;
+     border: 1px solid hsl(223.64deg 14.29% 30.2%);
+   }
+   .lower-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+   }
+    .lower-box button{
+           padding: 12px;
+    border-radius: 30px;
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid hsl(223.64deg 14.29% 30.2%);
+    color: white;
+    padding-inline: 20px;
+    font-size: 16px;
+    }
+    .circle{
+        width: 54px;
+    height: 27px;
+    background-color: hsl(2.68deg 85.79% 64.12%);
+    border-radius: 14px;
+    }
+    .cont{
+        display: flex;
+        justify-content: space-between;
+        margin-block: 1rem;
+    }
+</style>
+<body>
+    <div class="main-cont">
+        <header>
+            <img src="./images/logo.png" alt="">
+            <img id="bright" src="./images/icon-sun.svg" alt="">
+        </header>
+
+        <div class="lower">
+            <h1 style="color: white;">Extension List</h1>
+            <div class="btn">
+                <button>All</button>
+                <button>Active</button>
+                <button>Inactive</button>
+            </div>
+        </div>
+
+
+        <div class="cont">
+            <div class="box">
+                <div class="upper">
+                    <img src="./images/logo-json-wizard.svg" alt="">
+                    <div class="left" style="color: white;">
+                        <h2>DevLens</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, iure</p>
+                    </div>
+                </div>
+                <div class="lower-box">
+                    <button>Remove</button>
+                    <div class="circle"><p style="background-color: white;
+    width: 25px;
+    height: 26px;
+    border-radius: 42px;"></p></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="upper">
+                    <img src="./images/logo-console-plus.svg" alt="">
+                    <div class="left" style="color: white;">
+                        <h2>Style Lens</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, iure</p>
+                    </div>
+                </div>
+                <div class="lower-box">
+                    <button>Remove</button>
+                    <div class="circle"><p style="background-color: white;
+    width: 25px;
+    height: 26px;
+    border-radius: 42px;"></p></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="upper">
+                    <img src="./images/logo-devlens.svg" alt="">
+                    <div class="left" style="color: white;">
+                        <h2>Speed Boost</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, iure</p>
+                    </div>
+                </div>
+                <div class="lower-box">
+                    <button>Remove</button>
+                    <div class="circle"><p style="background-color: white;
+    width: 25px;
+    height: 26px;
+    border-radius: 42px;"></p></div>
+                </div>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="box">
+                <div class="upper">
+                    <img src="./images/logo-dom-snapshot.svg" alt="">
+                    <div class="left" style="color: white;">
+                        <h2>Deloppsh</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, iure</p>
+                    </div>
+                </div>
+                <div class="lower-box">
+                    <button>Remove</button>
+                    <div class="circle"><p style="background-color: white;
+    width: 25px;
+    height: 26px;
+    border-radius: 42px;"></p></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="upper">
+                    <img src="./images/logo-grid-guides.svg" alt="">
+                    <div class="left" style="color: white;">
+                        <h2>Grid Guides</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, iure</p>
+                    </div>
+                </div>
+                <div class="lower-box">
+                    <button>Remove</button>
+                    <div class="circle"><p style="background-color: white;
+    width: 25px;
+    height: 26px;
+    border-radius: 42px;"></p></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="upper">
+                    <img src="./images/logo-json-wizard.svg" alt="">
+                    <div class="left" style="color: white;">
+                        <h2>Jons</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, iure</p>
+                    </div>
+                </div>
+                <div class="lower-box">
+                    <button>Remove</button>
+                    <div class="circle"><p style="background-color: white;
+    width: 25px;
+    height: 26px;
+    border-radius: 42px;"></p></div>
+                </div>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="box">
+                <div class="upper">
+                    <img src="./images/logo-link-checker.svg" alt="">
+                    <div class="left" style="color: white;">
+                        <h2>Loops villy</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, iure</p>
+                    </div>
+                </div>
+                <div class="lower-box">
+                    <button>Remove</button>
+                    <div class="circle"><p style="background-color: white;
+    width: 25px;
+    height: 26px;
+    border-radius: 42px;"></p></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="upper">
+                    <img src="./images/logo-markup-notes.svg" alt="">
+                    <div class="left" style="color: white;">
+                        <h2>Markup Notes</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, iure</p>
+                    </div>
+                </div>
+                <div class="lower-box">
+                    <button>Remove</button>
+                    <div class="circle"><p style="background-color: white;
+    width: 25px;
+    height: 26px;
+    border-radius: 42px;"></p></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="upper">
+                    <img src="./images/logo-palette-picker.svg" alt="">
+                    <div class="left" style="color: white;">
+                        <h2>Palette</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, iure</p>
+                    </div>
+                </div>
+                <div class="lower-box">
+                    <button>Remove</button>
+                    <div class="circle"><p style="background-color: white;
+    width: 25px;
+    height: 26px;
+    border-radius: 42px;"></p></div>
+                </div>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="box">
+                <div class="upper">
+                    <img src="./images/logo-speed-boost.svg" alt="">
+                    <div class="left" style="color: white;">
+                        <h2>BootSpeed</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, iure</p>
+                    </div>
+                </div>
+                <div class="lower-box">
+                    <button>Remove</button>
+                    <div class="circle"><p style="background-color: white;
+    width: 25px;
+    height: 26px;
+    border-radius: 42px;"></p></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="upper">
+                    <img src="./images/logo-style-spy.svg" alt="">
+                    <div class="left" style="color: white;">
+                        <h2>Style-Logo</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, iure</p>
+                    </div>
+                </div>
+                <div class="lower-box">
+                    <button>Remove</button>
+                    <div class="circle"><p style="background-color: white;
+    width: 25px;
+    height: 26px;
+    border-radius: 42px;"></p></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="upper">
+                    <img src="./images/logo-tab-master-pro.svg" alt="">
+                    <div class="left" style="color: white;">
+                        <h2>Tab-Master</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, iure</p>
+                    </div>
+                </div>
+                <div class="lower-box">
+                    <button>Remove</button>
+                    <div class="circle"><p style="background-color: white;
+    width: 25px;
+    height: 26px;
+    border-radius: 42px;"></p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
