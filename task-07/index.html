@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-07</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: hsl(23.08deg 65% 92.16%);
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .cont-main{
+        width: 412px;
+        margin: auto;
+        border-radius: 18px;
+}
+.head{
+    background-color: hsl(10.07deg 79.01% 64.51%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    border-radius: 21px;
+    margin-bottom: 1rem;
+}
+.graph {
+      display: flex;
+    gap: 4px;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin-top: 3rem;
+}
+.main{
+   background-color: white;
+   border-radius: 21px;
+}
+.w-h{
+    width: 38px;
+    /* height: 100px;
+    background-color: red; */
+    border-radius: 6px;
+}
+.box-1{
+height: 43px;
+background-color: hsl(10.07deg 79.01% 64.51%);
+position: relative;
+}
+#inner{
+        position: absolute;
+    bottom: -21px;
+    right: 4px;
+    color: hsl(32.73deg 12.64% 82.94%);
+}
+.box-2{
+height: 88px;
+background-color:hsl(10.07deg 79.01% 64.51%);
+position: relative;
+}
+.box-3{
+height: 140px;
+background-color:hsl(187.35deg 48.51% 80.2%);
+position: relative;
+}
+.box-4{
+height: 75px;
+background-color:hsl(10deg 100% 76.47%);
+position: relative;
+}
+.box-5{
+height: 63px;
+background-color: hsl(10.07deg 79.01% 64.51%);
+position: relative;
+}
+.box-6{
+height: 120px;
+background-color: hsl(10.07deg 79.01% 64.51%);
+position: relative;
+}
+.box-7{
+height: 70px;
+background-color: hsl(10.07deg 79.01% 64.51%);
+position: relative;
+}
+#upper{
+    border-radius: 8px;
+    position: absolute;
+    top: -31px;
+    right: -13px;
+    background-color: hsl(22.29deg 44.3% 15.49%);
+    color: white;
+    padding: 1px;
+    padding-block: 5px;
+    padding-inline: 8px;
+}
+.line{
+   margin: auto;
+    border: 1px solid hsl(32.73deg 12.64% 82.94%);
+    margin-top: 4rem;
+    width: 80%;
+    margin-bottom: 2px;
+}
+.last-p{
+    display: flex;
+    justify-content: space-between;
+}
+.last{
+    padding: 23px;
+}
+.end{
+        display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+</style>
+<body>
+    <div class="cont-main">
+        <div class="head">
+            <div class="left">
+                <p style="margin-bottom: 6px;">My Balance</p>
+                <h2>$921.48</h2>
+            </div>
+            <div class="right">
+                <img src="./images/logo.svg" alt="">
+            </div>
+        </div>
+
+        <div class="main">
+            <h2 style="    margin-left: 2rem; padding-top: 2rem;
+">Spending - Last 7 days</h2>
+
+            <div class="graph">
+                <div class="box-1 w-h"><p id="inner">Mon</p></div> 
+                <div class="box-2 w-h"><p id="inner">Tue</p></div>
+                <div class="box-3 w-h"><p id="inner">Wed</p> <p id="upper">52.36$</p></div>
+                <div class="box-4 w-h"><p id="inner">Thur</p><p id="upper">31.07$</p></div>
+                <div class="box-5 w-h"><p id="inner">Fri</p></div>
+                <div class="box-6 w-h"><p id="inner">Sat</p></div>
+                <div class="box-7 w-h"><p id="inner">Sun</p></div>
+            </div>
+             <div class="line"></div>
+        <div class="last">
+            <p style="color: hsl(32.73deg 12.64% 82.94%);">Total this month</p>
+
+            <div class="last-p">
+                <h1>$478.33</h1>
+                <div class="end">
+                    <h5>+2.4%</h5>
+                    <p style="color: hsl(32.73deg 12.64% 82.94%);">from last month </p>
+                </div>
+            </div>
+        </div>
+        </div>
+       
+    </div>
+</body>
+</html>
