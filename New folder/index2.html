@@ -5,22 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <script>
-         let a  = +prompt("Enter a number");
-        if (a%2 == 0) {
-            alert("You have add even number we are adding one");
-            a++;
-        }
-        else{
-            alert("odd number")
-        }
     
-            for(let i =1; i<=10 ;i++){
-                console.log( a + "x" + i + "=" + a * i);
-            }
+    
+    
+<h1 style="display: inline-block;" id="jello"></h1>
++
+<h1 style="display: inline-block;" id="ello"></h1>
+=
+<div style="display: inline-block;" id="result"></div>
+    <script>
+        //  let a  = +prompt("Enter a number");
+        // if (a%2 == 0) {
+        //     alert("You have add even number we are adding one");
+        //     a++;
+        // }
+        // else{
+        //     alert("odd number")
+        // }
+    
+        //     for(let i =1; i<=10 ;i++){
+        //         console.log( a + "x" + i + "=" + a * i);
+        //     }
       
-        
+        let a  = +prompt("Enter a number");
+        let b  = +prompt("Enter a second");
+        document.getElementById("jello").innerText = a;  
+        document.getElementById("ello").innerText = b;  
+        result.innerText = my; 
+
+
+function add(){
+   let  result = a + b;
+    alert(result);
+}
+let my =add();
+
     </script>
 </body>
 </html>
