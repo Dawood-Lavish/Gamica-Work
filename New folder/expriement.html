@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exprement</title>
+</head>
+<body>
+    <script>
+        let ch="";
+        let sli ="";
+        let counter="";
+    let str = "*#.................";
+    for(i=0;i<=str.length-1;i++){
+        ch += str[i];
+       sli = ch.slice(i,i+3);
+       if(sli =="."){
+        counter++
+       }
+    }
+    alert("qty" + counter/3)
+
+   
+
+    </script>
+</body>
+</html>
