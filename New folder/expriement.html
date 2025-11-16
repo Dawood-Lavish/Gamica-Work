@@ -1,27 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>exprement</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        let ch="";
-        let sli ="";
-        let counter="";
-    let str = "*#....";
-    for(i=0;i<=str.length-1;i++){
-        ch += str[i];
-       sli = ch.slice(i,i+3);
-       if(sli =="."){
-        counter++
-       }
-    }
-    alert("qty" + counter/3)
+      // Task 01
+      // let a = [12, true, "dawood", 0.12, null, Symbol()];
+      // let input;
+      // let c;
 
-   
+      // function telltype() {
+      //   for (let i = 0; i <= a.length - 1; i++) {
+      //     input = a[i];
+      //     c = [typeof(input)];
+      //     console.log(c);
+      //   }
+      // } telltype();
 
+      // Task 02
+      // let a =[0,1,2,3,4,5,6,7]
+      // function reverserray() {
+      //   a = a.reverse();
+      //   console.log(a);
+      // }
+      // reverserray();
+
+      // Task 03
+      // let num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+      // function addoneinarray() {
+      //   for (let i = 0; i <= num.length - 1; i++) {
+      //     c = num[i];
+      //     c += 1;
+      //     console.log(c);
+      //   }
+      // }
+      // addoneinarray();
+
+      // Task-5
+      //  let a = [1, 2, 3, 4, 5, "new", 1, 3, 4, 12];
+      // function lastitem() {
+
+      //   console.log((a[a.length-1]))
+      // }
+      // lastitem();
+
+      // Task-6
+
+      let a = [1, 2, 3, 4, 5];
+      let b = [6,7,8,9,10];
+      let concatitem;
+
+      function concatearray() {
+        concatitem = a.concat(b);
+        console.log(concatitem)
+      }
+      concatearray();
     </script>
-</body>
+  </body>
 </html>
