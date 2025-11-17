@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class-work</title>
+</head>
+<body>
+    <script>
+        let districts = [
+         {
+            name:"FSD",
+            tehsils: [
+               {
+                  name:"jaranwala",
+                  POS:100,
+                  AC:"rameez"
+               },
+               {
+                  name:"jhumra",
+                  POS:103,
+                  AC:"ahmed"
+               },
+               {
+                  name:"madina",
+                  POS:102,
+                  AC:"sarib"
+               }
+            ]
+         },
+         {
+            name:"TOBA",
+            tehsils:[
+               {
+                  name:"gojra",
+                  POS:104,
+                  AC:"ashraf"
+               },
+               {
+                  name:"peer mahal",
+                  POS:105,
+                  AC:"dawood"
+               }
+            ]
+         }
+      ]
+
+
+      
+    let districtName = prompt("enter name");
+      for(let some of districts){
+        if(some.name == districtName ){ 
+         alert(some.name.length);
+          break;
+        }
+      }
+      
+
+
+    </script>
+</body>
+</html>
