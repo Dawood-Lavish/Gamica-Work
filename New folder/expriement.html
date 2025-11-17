@@ -3,73 +3,163 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>exprement</title>
+    <title>Student Information</title>
   </head>
+  <style>
+    form {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+      flex-direction: column;
+      width: 14%;
+      margin: auto;
+      margin-top: 4rem;
+      gap: 12px;
+      align-items: center;
+    }
+    .data {
+      background-color: #726e6e;
+      color: white;
+    }
+    #studentkaname {
+      height: 32px;
+      width: 204px;
+      border: 1px solid gray;
+      border-radius: 9px;
+    }
+    #btn {
+      color: white;
+      background-color: #af4120;
+      padding: 10px;
+      padding-inline: 22px;
+      font-size: 16px;
+      border: none;
+      border-radius: 31px;
+      cursor: pointer;
+    }
+    .data {
+      width: 43%;
+      margin: auto;
+      text-align: center;
+      padding: 12px;
+      margin-top: 2rem;
+    }
+    #gaib1 {
+      display: none;
+      color: #11e9a5;
+    }
+  </style>
   <body>
+    <form id="myForm">
+      <input type="text" placeholder="Enter your name" id="studentkaname" />
+      <button type="submit" id="btn">Submit</button>
+    </form>
+    <div class="data">
+      <h2 id="gaib">Wellcome to Student Data App</h2>
+      <h2 id="gaib1">Student Data is following</h2>
+      <h2 id="dataagya0"></h2>
+      <h2 id="dataagya2"></h2>
+      <h2 id="dataagya"></h2>
+      <h2 id="dataagya3"></h2>
+      <h2 id="dataagya4"></h2>
+      <h2 id="dataagya5"></h2>
+    </div>
+
     <script>
-      // Task 01
-      // let a = [12, true, "dawood", 0.12, null, Symbol()];
-      // let input;
-      // let c;
+      let Alldata = [
+        {
+          university: "Riphah University",
+          name: "Dawood",
+          Rollno: 26852,
+          CGPA: 3.4,
+          fee: "No",
+          totalfee: 8500,
+          discountedfee: 0,
+        },
+        {
+          university: "Fast University",
+          name: "Usman",
+          Rollno: 26654,
+          CGPA: 3.9,
+          fee: "Yes",
+          totalfee: 8500,
+          discountedfee: 0,
+        },
+        {
+          university: "Tough University",
+          name: "Ali",
+          Rollno: 28652,
+          CGPA: 3.3,
+          fee: "No",
+          totalfee: 8500,
+          discountedfee: 0,
+        },
+        {
+          university: "Tough University",
+          name: "Swaira",
+          Rollno: 28852,
+          CGPA: 3.9,
+          fee: "Yes",
+          totalfee: 8500,
+          discountedfee: 0,
+        },
+        {
+          university: "Superior University",
+          name: "Ahmad",
+          Rollno: 99852,
+          CGPA: 3.6,
+          fee: "Yes",
+          totalfee: 8500,
+          discountedfee: 0,
+        },
+      ];
 
-      // function telltype() {
-      //   for (let i = 0; i <= a.length - 1; i++) {
-      //     input = a[i];
-      //     c = [typeof(input)];
-      //     console.log(c);
-      //   }
-      // } telltype();
+      let form = document.getElementById("myForm");
+      let studentname = document.getElementById("studentkaname");
+      let a = document.getElementById("dataagya");
+      let b = document.getElementById("dataagya2");
+      let c = document.getElementById("dataagya3");
+      let d = document.getElementById("dataagya4");
+      let discount = document.getElementById("dataagya5");
+      let baname = document.getElementById("gaib");
+      let naam = document.getElementById("dataagya0");
 
-      // Task 02
-      // let a =[0,1,2,3,4,5,6,7]
-      // function reverserray() {
-      //   a = a.reverse();
-      //   console.log(a);
-      // }
-      // reverserray();
+      form.addEventListener("submit", function (x) {
+        x.preventDefault();
 
-      // Task 03
-      // let num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-      // function addoneinarray() {
-      //   for (let i = 0; i <= num.length - 1; i++) {
-      //     c = num[i];
-      //     c += 1;
-      //     console.log(c);
-      //   }
-      // }
-      // addoneinarray();
+        baname.style.display = "none";
+        document.getElementById("gaib1").style.display = "block";
+        let found = false;
+        for (let some of Alldata) {
+          if (studentname.value === some.name) {
+            naam.innerText = some.name;
+            a.innerText = "Your CGPA is: " + some.CGPA;
+            b.innerText = some.university;
 
-      // Task-5
-      //  let a = [1, 2, 3, 4, 5, "new", 1, 3, 4, 12];
-      // function lastitem() {
+            if (some.CGPA >= 3.5 && some.fee === "Yes") {
+              discount.innerText = "You have a discount!";
+              let discounted = some.totalfee - 700;
+              c.innerText =
+                some.totalfee + " " + "-" + "700" + "=" + discounted;
+              d.innerText = "Your fee has been paid";
+            } else {
+              alert("You do not have a discount");
+              c.innerText =
+                some.totalfee + "-" + " " + "0" + "=" + some.totalfee;
+              d.innerText = "Your fee has not been paid";
+            }
 
-      //   console.log((a[a.length-1]))
-      // }
-      // lastitem();
+            found = true;
+            break;
+          }
+        }
 
-      // Task-6
-
-      // let a = [1, 2, 3, 4, 5];
-      // let b = [6,7,8,9,10];
-      // let concatitem;
-
-      // function concatearray() {
-      //   concatitem = a.concat(b);
-      //   console.log(concatitem)
-      // }
-      // concatearray();
-
-      // Task-7
-      // let a = ["mango","apple","bnana","pinaplle", "grapes"];
-      // let b =prompt("enter a name of fruite");
-      // for(let  i =0;i<=a.length;i++){
-      //   // console.log(a[i])
-      //     if(b == a[i]){
-      //    alert("ok ha")
-      // }
-      // }
-      
-    
+        if (!found) {
+          alert("Invalid name!");
+          document.getElementById("gaib1").style.display = "none";
+          a.innerText = "Enter correct name";
+        }
+      });
     </script>
   </body>
 </html>
