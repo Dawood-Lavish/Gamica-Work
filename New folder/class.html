@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Class-work</title>
-</head>
-<body>
-   <script>
-      
-   </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class-work</title>
+  </head>
+  <body>
+    <script>
+      let a = [
+        {
+          name: "Qasim",
+          rollno: 121,
+        },
+        { name: "Muazam",
+         rollno: 124 },
+
+        { name: "Ayesha",
+         rollno: 187 },
+      ];
+      let meraname  = prompt("enter name")
+      let newarray = a.filter(function (item) {
+        if (item.name === meraname) {
+          return item.name;
+        } else {
+          return false;
+          
+        }
+      }).map(function(item2){
+         return item2.name;
+      });
+      console.log(newarray);
+    </script>
+  </body>
 </html>
