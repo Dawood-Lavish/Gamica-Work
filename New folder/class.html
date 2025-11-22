@@ -5,40 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Class-work</title>
   </head>
-  <body>
-    <script>
-      // let a = [
-      //   {
-      //     name: "Qasim",
-      //     rollno: 121,
-      //     uni:"riphah international univeristy"
-      //   },
-      //    {
-      //     name: "Dawood",
-      //     rollno: 125,
-      //     uni:"Suprerori university"
-      //   },
-      //   { name: "Muazam",
-      //    rollno: 124,
-      //       uni:"Superior University"
-      //    },
+  <style>
+    body {
+      width: 60%;
+      margin: auto;
+      height: 600px;
+    }
+    #contaner {
+      margin-top: 2rem;
+    }
+    #contaner img {
+      width: 100%;
+      background-size: cover;
+    }
+    .buton {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+    }
+    button {
+      padding: 12px 12px;
+      border: none;
+      background-color: rgb(180, 124, 231);
+      cursor: pointer;
+    }
 
-      //   { name: "Ayesha",
-      //    rollno: 187,
-      //       uni:"Goverment Collage and university of fasilabad"
-      //    },
-      // ];
-      // let meraname  = prompt("enter name")
-      // let newarray = a.filter(function (item) {
-      //   if (item.name == meraname) {
-      //     return item.name;
-      //   } else if(item != meraname)  {
-      //     return false;  
-      //   }
-      // }).map(function(item2){
-      //    return alert(item2.uni);
-      // });
-      // console.log(newarray);
+  </style>
+  <body>
+    <div id="contaner">
+      <img id="myimg" src="./fresh-images/pexels-hsapir-1054655.jpg" alt="" />
+    </div>
+    <div class="buton">
+      <button id="next" onclick="slider()">Next</button>
+      <button id="back" onclick="slide1()">Previous</button>
+    </div>
+    <script>
+      let image = document.getElementById("myimg");
+      function slider() {
+        image.src = "./fresh-images/pexels-pixabay-45853.jpg";
+      }
+      function slide1() {
+        image.src = "./fresh-images/pexels-hsapir-1054655.jpg";
+      }
     </script>
   </body>
 </html>
