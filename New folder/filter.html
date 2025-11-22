@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>filter</title>
+  </head>
+  <style>
+    input,
+    button {
+      padding: 7px 12px;
+      border: 1px solid gray;
+    }
+    #box {
+      background-color: #bcd9d9;
+      text-align: center;
+      padding: 10px;
+      border: 1px solid gray;
+      border-radius: 12px;
+    }
+    #cont2 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      width: 80%;
+      justify-content: space-between;
+      margin: auto;
+      margin-top: 12px;
+    }
+  </style>
+  <body>
+    <div id="cont">
+      <form action="">
+        <input id="inputinfo" type="search" placeholder="Search Here" />
+        <!-- <button id="submotwala" style="cursor: pointer" type="submit">
+          Search
+        </button> -->
+      </form>
+    </div>
+    <div id="cont2">
+      <div id="box">
+        <img
+          src="https://cdn.mos.cms.futurecdn.net/hf2CQvHr9KNtKuUSDkeQVH.jpg"
+          width="150px"
+          alt=""
+        />
+        <h1>infnix-Hot 60 pro</h1>
+        <p>price 60000</p>
+      </div>
+      <div id="box">
+        <img
+          src="https://cdn.mos.cms.futurecdn.net/hf2CQvHr9KNtKuUSDkeQVH.jpg"
+          width="150px"
+          alt=""
+        />
+        <h1>itel 30 60 pro</h1>
+        <p>price 90000</p>
+      </div>
+      <div id="box">
+        <img
+          src="https://cdn.mos.cms.futurecdn.net/hf2CQvHr9KNtKuUSDkeQVH.jpg"
+          width="150px"
+          alt=""
+        />
+        <h1>i-pone 60 pro</h1>
+        <p>price 60000</p>
+      </div>
+      <div id="box">
+        <img
+          src="https://cdn.mos.cms.futurecdn.net/hf2CQvHr9KNtKuUSDkeQVH.jpg"
+          width="150px"
+          alt=""
+        />
+        <h1>infnix-Hot 90 pro</h1>
+        <p>price 50000</p>
+      </div>
+      <div id="box">
+        <img
+          src="https://cdn.mos.cms.futurecdn.net/hf2CQvHr9KNtKuUSDkeQVH.jpg"
+          width="150px"
+          alt=""
+        />
+        <h1>iphone 12 pro max</h1>
+        <p>price 70000</p>
+      </div>
+      <div id="box">
+        <img
+          src="https://cdn.mos.cms.futurecdn.net/hf2CQvHr9KNtKuUSDkeQVH.jpg"
+          width="150px"
+          alt=""
+        />
+        <h1>iphone 13 pro max</h1>
+        <p>price 90000</p>
+      </div>
+      <div id="box">
+        <img
+          src="https://cdn.mos.cms.futurecdn.net/hf2CQvHr9KNtKuUSDkeQVH.jpg"
+          width="150px"
+          alt=""
+        />
+        <h1>iphone 14 pro max</h1>
+        <p>price 100000</p>
+      </div>
+      <div id="box">
+        <img
+          src="https://cdn.mos.cms.futurecdn.net/hf2CQvHr9KNtKuUSDkeQVH.jpg"
+          width="150px"
+          alt=""
+        />
+        <h1>iphone 15 pro max</h1>
+        <p>price 140000</p>
+      </div>
+      <div id="box">
+        <img
+          src="https://cdn.mos.cms.futurecdn.net/hf2CQvHr9KNtKuUSDkeQVH.jpg"
+          width="150px"
+          alt=""
+        />
+        <h1>iphone 16 pro max</h1>
+        <p>price 131000</p>
+      </div>
+      <div id="box">
+        <img
+          src="https://cdn.mos.cms.futurecdn.net/hf2CQvHr9KNtKuUSDkeQVH.jpg"
+          width="150px"
+          alt=""
+        />
+        <h1>iphone 17 pro max</h1>
+        <p>price 123000</p>
+      </div>
+    </div>
+  </body>
+  <script>
+   let info = document.getElementById("inputinfo");
+let data = document.getElementById("cont2");
+let form = document.querySelector("form");
+
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  filterItems();
+});
+function filterItems() {
+  let searchValue = info.value.toLowerCase();
+  let boxes = data.querySelectorAll("#box");
+
+  boxes.forEach((box) => {
+    let title = box.querySelector("h1").innerText.toLowerCase();
+
+
+    if (title.includes(searchValue)) {
+      box.style.display = "block";
+    } else {
+      box.style.display = "none";
+    }
+  });
+}
+
+
+info.addEventListener("keyup", filterItems);
+
+
+
+
+  </script>
+</html>

@@ -6,47 +6,39 @@
     <title>Class-work</title>
   </head>
   <style>
-    body {
-      width: 60%;
+    .main{
+      width: 50%;
       margin: auto;
-      height: 600px;
-    }
-    #contaner {
-      margin-top: 2rem;
-    }
-    #contaner img {
-      width: 100%;
-      background-size: cover;
-    }
-    .buton {
       display: flex;
+      align-items: center;
       justify-content: center;
-      gap: 3rem;
+      margin-top: 4rem;
+      gap: 1rem;
     }
-    button {
-      padding: 12px 12px;
-      border: none;
-      background-color: rgb(180, 124, 231);
+      input{
+      padding: 8px 12px;
+      font-size: 16px;
+    }
+    #hogya{
       cursor: pointer;
     }
-
   </style>
-  <body>
-    <div id="contaner">
-      <img id="myimg" src="./fresh-images/pexels-hsapir-1054655.jpg" alt="" />
-    </div>
-    <div class="buton">
-      <button id="next" onclick="slider()">Next</button>
-      <button id="back" onclick="slide1()">Previous</button>
-    </div>
-    <script>
-      let image = document.getElementById("myimg");
-      function slider() {
-        image.src = "./fresh-images/pexels-pixabay-45853.jpg";
-      }
-      function slide1() {
-        image.src = "./fresh-images/pexels-hsapir-1054655.jpg";
-      }
-    </script>
+
+  <div class="main">
+    <input id="inputwalatag" type="password" placeholder="Enter your password" required>
+    <img onclick="passwordshow()" ondblclick="passwordshow2()" id="hogya" width="35px" src="./fresh-images/icons8-shower-50.png" alt="">
+  </div>
+
   </body>
+  <script>
+    let a = document.getElementById("inputwalatag");
+    let passwordshower = document.getElementById("hogya");
+
+    function passwordshow(){
+      a.type = "text";
+    }
+     function passwordshow2(){
+      a.type = "password";
+    }
+  </script>
 </html>

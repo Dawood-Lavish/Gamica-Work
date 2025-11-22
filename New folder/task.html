@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task</title>
+  </head>
+  <style>
+    #shower {
+      border: none;
+      cursor: pointer;
+    }
+    #list {
+      list-style: none;
+      background-color: aqua;
+      width: 150px;
+      padding: 12px;
+      position: relative;
+      top: -13px;
+      left: 6px;
+      display: none;
+    }
+  </style>
+  <body>
+    <nav>
+      <button id="shower" onclick="showhojya()" ondblclick="none()">
+        <img
+          style="background-color: black"
+          id="change"
+          src="./fresh-images/icons8-menu-48.png"
+          alt=""
+        />
+      </button>
+      <ul id="list">
+        <li>Home</li>
+        <li>Contact</li>
+        <li>Numbers</li>
+        <li>About</li>
+        <li>Protecter</li>
+        <li>Numbers</li>
+        <li>About</li>
+        <li>Protecter</li>
+      </ul>
+    </nav>
+    <script>
+      let a = document.getElementById("shower");
+      let c = document.getElementById("change");
+      let b = document.getElementById("list");
+      function showhojya() {
+        b.style.display = "block";
+        c.src = "./fresh-images/icons8-cross-48.png";
+      }
+      function none() {
+        c.src = "./fresh-images/icons8-menu-48.png";
+        b.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
