@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <form onclick="submitkaro()" action="">
+      <input type="text" placeholder="Enter your name" /> <br />
+      <input type="email" placeholder="Enter your Email" /> <br />
+      <input oninput="alertwala()" id="pass" type="password" placeholder="Enter your Password" /> <br />
+      <button type="submit">Submit</button>
+      <button id="down" oninput="hogya()">Download</button>
+    </form>
+  </body>
+  <script>
+    function submitkaro() {
+      event.preventDefault();
+    }
+    let a = document.getElementById("pass");
+
+    function alertwala(){
+      if(a.value.length <4){
+        alert("zyyada dalo")
+      }
+    }
+    // let mea =document.getElementById("down");
+    // let img = document.createElement("img");
+    // img.src = "./fresh-images/pexels-hsapir-1054655.jpg"
+    // mea.appendChild(img)
+
+    function hogya(){
+          let a = document.getElementById("down");
+          a.src= "./fresh-images/pexels-hsapir-1054655.jpg"
+    }
+  </script>
 </html>
