@@ -9,8 +9,8 @@
     <form onclick="submitkaro()" action="">
       <input type="text" placeholder="Enter your name" /> <br />
       <input type="email" placeholder="Enter your Email" /> <br />
-      <input oninput="alertwala()" id="pass" type="password" placeholder="Enter your Password" /> <br />
-      <button type="submit">Submit</button>
+      <input id="pass" type="password" placeholder="Enter your Password" /> <br />
+      <button type="submit" onclick="alertwala()" >Submit</button>
       <button id="down" oninput="hogya()">Download</button>
     </form>
   </body>
@@ -32,7 +32,7 @@
 
     function hogya(){
           let a = document.getElementById("down");
-          a.src= "./fresh-images/pexels-hsapir-1054655.jpg"
+          a.download= "./fresh-images/pexels-hsapir-1054655.jpg"
     }
   </script>
 </html>
