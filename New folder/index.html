@@ -3,21 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <title>Document</title>
 </head>
 <body>
-  
+  <script>
+    class student{
+      name
+      rollno
+      smester
+      CGPA
+      Address
+      feepiad = false
+    }
+
+    let dawood = new student;
+    dawood.name = "Dawood";
+    dawood.rollno = 1212;
+    dawood.CGPA = 3.5;
+    dawood.feepiad = true;
+
+     let ali = new student;
+    dawood.name = "ali";
+    dawood.rollno = 1312;
+    dawood.CGPA = 3.9;
+    dawood.feepiad = false;
+
+    console.log(dawood,al)
+  </script>
 </body>
-<script>
-async function merwala() { 
-  let resp = await axios.get("https://api.weatherapi.com/v1/current.json?key=24df5fcf9b6c4eaebb770740222103&q=London&aqi=no");
-  console.log(resp.data)
-}
-let a = merwala()
-</script>
 </html>
-
-
-
-
